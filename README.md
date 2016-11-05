@@ -1,6 +1,6 @@
 # get-this-index
 获取当前循环次数的索引值
-
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -38,3 +38,4 @@
       </script>
     </body>
     </html>
+```
