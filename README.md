@@ -53,16 +53,16 @@
 
 <body>
     <script type="text/javascript">
-    var arr = [];
-    for (var i = 0 ; i <= 3; i++) {
-        arr.push(
-        	(function(i) {
-                return function() {
-                    console.log(i)
-                }
-            })(i)
-        );
+    for (var i = 0, arr = []; i <= 3; i++) {
+        arr.push((function(para) {
+            return function() {
+                console.log(para);
+            }
+        })(i));
     }
+    arr[0]();
+    arr[1]();
+    arr[2]();
     </script>
 </body>
 
