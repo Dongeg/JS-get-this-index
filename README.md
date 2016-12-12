@@ -39,3 +39,33 @@
     </body>
     </html>
 ```
+
+
+方法二
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var arr = [];
+    for (var i = 0 ; i <= 3; i++) {
+        arr.push(
+        	(function(i) {
+                return function() {
+                    console.log(i)
+                }
+            })(i)
+        );
+    }
+    </script>
+</body>
+
+</html>
+```
+<a href="https://www.zhihu.com/question/33468703">参考链接</a>
